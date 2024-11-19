@@ -1,9 +1,6 @@
-function fullName(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-}
+const generateFullName = (firstName, lastName) => ({
+  firstName,
+  lastName,
+});
 
-// const testName = new fullName("Mario", "Rossi");
-// console.log(testName);
-
-module.exports = fullName;
+module.exports = generateFullName;
